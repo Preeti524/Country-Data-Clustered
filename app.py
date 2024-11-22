@@ -20,7 +20,7 @@ def prediction(input_data):
     pca_data=pca.transform(scaled_data)
 
     pred=model.predict(pca_data)[0]
-    if pred=0:
+    if pred==0:
         return 'Developing'
     elif pred==1:
         return 'Underdeveloped'
